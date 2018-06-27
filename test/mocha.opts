@@ -1,0 +1,8 @@
+--compilers ts-node/register
+--require source-map-support/register
+--require test/framework/index.ts
+--check-leaks
+--full-trace
+--reporter spec
+--timeout 10000
+test/**/*.spec.ts
