@@ -12,11 +12,10 @@ const testHelper: any = mainContainer.getNamed(IDENTIFIER.TEST_MODULE, NAMED_TES
 const uri = `/${CONTACT}`;
 
 // @TODO Throw Error shown on terminal
-// @TODO Watch not functioning properly after code changes
 
 describe(uri, () => {
     let clinicCode = configTest.CLINIC_CODE;
-    
+
     beforeEach((done) => {
         testHelper.onReady(() => {
             done();

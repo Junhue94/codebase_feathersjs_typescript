@@ -1,5 +1,4 @@
 "use strict";
-///<reference path="../../node_modules/@types/mongoose/index.d.ts"/>
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -11,9 +10,7 @@ const inversify_1 = require("inversify");
 const errors = require("feathers-errors");
 const logger_1 = require("../modules/logger");
 const mongoose = require("mongoose");
-const bluebird = require("bluebird");
 const develop_1 = require("../config/develop");
-mongoose.Promise = bluebird;
 /**
  * DAL Base
  */
@@ -28,9 +25,7 @@ let Dao = class Dao {
     }
     saveOne(clinicCode, dataModel) {
         // Initialize mongodb connection
-        const db = mongoose.connect(this.connectionStr(clinicCode), {
-            useMongoClient: true
-        });
+        const db = mongoose.connect(this.connectionStr(clinicCode));
         // Save data to database
         return db
             .then(() => {

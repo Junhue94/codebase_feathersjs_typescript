@@ -1,7 +1,8 @@
 
-import { Logger, transports } from 'winston';
+import { createLogger, transports, format } from 'winston';
 
-export const logger = new Logger({
+export const logger = createLogger({
+    format: format.simple(),
     transports: [
         new transports.Console()
     ]

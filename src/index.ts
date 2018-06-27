@@ -10,14 +10,12 @@ import { configDevelop } from './config/develop';
 // Set app instance based on NODE_ENV
 let appInstance: any;
 switch (process.env.NODE_ENV) {
-case 'production': {
-    appInstance = new MainApp(configProduction);
-    break;
-}
-default: {
-    appInstance = new MainApp(configDevelop);
-}
-}
+    case 'production':
+        appInstance = new MainApp(configProduction);
+        break;
+    default:
+        appInstance = new MainApp(configDevelop);
+    }
 
 /**
  * Instantiate App

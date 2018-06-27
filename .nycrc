@@ -21,6 +21,6 @@
     "cache": true,
     "instrument": true,
     "all": true,
-    "report-dir": "./test/unit/coverage",
-    "temp-directory": "./test/unit/.nyc_output"
+    "report-dir": "./test/coverage",
+    "temp-directory": "./test/.nyc_output"
 }

@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "ts-node src/index.js",
     "start": "nodemon --exec ts-node src/index.js",
-    "unit": "nodemon --exec \"mocha -R min\"",
+    "test": "nodemon --exec \"mocha -R min\"",
     "coverage": "nyc mocha"
   },
   "repository": {

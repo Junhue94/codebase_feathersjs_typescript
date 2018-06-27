@@ -10,13 +10,11 @@ const develop_1 = require("./config/develop");
 // Set app instance based on NODE_ENV
 let appInstance;
 switch (process.env.NODE_ENV) {
-    case 'production': {
+    case 'production':
         appInstance = new mainApp_1.MainApp(production_1.configProduction);
         break;
-    }
-    default: {
+    default:
         appInstance = new mainApp_1.MainApp(develop_1.configDevelop);
-    }
 }
 /**
  * Instantiate App

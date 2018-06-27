@@ -11,7 +11,6 @@ const index_1 = require("../../../../src/modules/ioc/index");
 const testHelper = index_1.default.getNamed(serviceIdentifier_1.IDENTIFIER.TEST_MODULE, namedTestModule_1.NAMED_TEST_MODULE.TEST_HELPER);
 const uri = `/${allServiceUri_1.CONTACT}`;
 // @TODO Throw Error shown on terminal
-// @TODO Watch not functioning properly after code changes
 describe(uri, () => {
     let clinicCode = test_1.configTest.CLINIC_CODE;
     beforeEach((done) => {
