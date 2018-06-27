@@ -1,0 +1,22 @@
+{
+  "name": "jyc_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node src/index.js",
+    "start": "nodemon --exec ts-node src/index.js",
+    "unit": "nodemon --exec \"mocha -R min\"",
+    "coverage": "nyc mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Junhue94/jyc_api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Junhue94/jyc_api/issues"
+  },
+  "homepage": "https://github.com/Junhue94/jyc_api#readme"
+}

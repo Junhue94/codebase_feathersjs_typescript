@@ -1,0 +1,26 @@
+{
+    "exclude": [
+        "node_modules/**",
+        "src/index.ts",
+        "src/mainApp.ts"
+    ],
+    "include": [
+        "src/**/*.ts"
+    ],
+    "extension": [
+        ".ts"
+    ],
+    "require": [
+        "ts-node/register"
+    ],
+    "reporter": [
+        "text-summary",
+        "html"
+    ],
+    "sourceMap": true,
+    "cache": true,
+    "instrument": true,
+    "all": true,
+    "report-dir": "./test/unit/coverage",
+    "temp-directory": "./test/unit/.nyc_output"
+}
